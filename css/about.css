@@ -1,0 +1,105 @@
+:root{
+        --color-primary: #6c63ff;
+        --color-success: #00bf8e;
+        --color-success: #00bf8e;
+        --color-warning: #f7c94b;
+        --color-danger: rgba(247, 88, 66, 0.4);
+        --color-white: #fff;
+        --color-light: rgba(255, 255, 255, 0.7);
+        --color-black: #000;
+        --color-bg:#1f2641; 
+        --color-bg1: #2e3267;
+        --color-bg2: #424890;
+        --main-color:#123de6;
+        --light-color:#888;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about_members .box-container h1{
+    border-top:1px solid var(--light-color);
+    font-size: 2.5rem;
+    margin:  3rem  3rem;
+}
+.team_icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* .about_members{
+    background: var(--color-white);
+} */
+
+/* .box-container .team_icons.team:hover{
+    background-color: var(--color-white);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+} */
+
+.team{
+    /* background: var(--color-white); */
+    padding: 2rem;
+    position: relative;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.team{
+   background-color: var(--color-white);
+    border-radius: 1rem;
+   
+}
+.team:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    border-color: 1px solid var(--main-color) transperent;
+}
+
+.team img {
+    filter: saturate(0);
+}
+
+.team:hover img{
+    filter: saturate(1);
+}
+
+.team_info * {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.team_info h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.team_info p{
+    font-size: 2rem;
+    color: var(--main-color);
+    line-height: 2rem;
+}
+
+.team_socials {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.team:hover .team_socials{
+    right: 0%;
+}
+
+.team_socials a{
+    padding: 1rem
+}
+
+
